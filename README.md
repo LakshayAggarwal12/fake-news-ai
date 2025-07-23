@@ -78,4 +78,12 @@ Hugging Face Spaces
 
 ✅ License
 This project is licensed under the MIT License.
+⚠️ Important Disclaimer
+This application currently uses the distilbert-base-uncased-finetuned-sst-2-english model, which is trained for sentiment analysis (positive/negative) and not specifically for fake news detection.
+As a result, the predictions may not always be accurate and should be treated as a demonstration only.
 
+For real-world usage, you should:
+
+Fine-tune a BERT-based model on a fake news dataset (e.g., Kaggle Fake News or LIAR dataset).
+
+Or use a pre-trained fake news detection model from Hugging Face and update the app accordingly.
