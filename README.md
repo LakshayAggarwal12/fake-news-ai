@@ -64,21 +64,23 @@ pip install -r requirements.txt
 streamlit run app.py
 The app will open on http://localhost:8501.
 
-✅ Deployment
+---
+##✅ Deployment
 You can deploy this app for free using:
 
 Streamlit Cloud
 
 Hugging Face Spaces
 
-✅ Future Scope
+
+##✅ Future Scope
 ✔ Multi-language fake news detection
 ✔ Integration with real-time news APIs
 ✔ Advanced NLP pipelines for fact-checking
 
-✅ License
+##✅ License
 This project is licensed under the MIT License.
-⚠️ Important Disclaimer
+##⚠️ Important Disclaimer
 This application currently uses the distilbert-base-uncased-finetuned-sst-2-english model, which is trained for sentiment analysis (positive/negative) and not specifically for fake news detection.
 As a result, the predictions may not always be accurate and should be treated as a demonstration only.
 
