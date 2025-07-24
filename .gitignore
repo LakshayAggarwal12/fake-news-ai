@@ -8,3 +8,5 @@ models/
 *.log
 .DS_Store
 
+prepare_dataset/
+*.csv
