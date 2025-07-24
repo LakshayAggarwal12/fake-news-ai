@@ -39,7 +39,16 @@ elif option == "Generate Fake News":
     if st.button("Generate"):
         if user_prompt.strip():
             with st.spinner("Generating fake news... Please wait"):
-                output = generator(user_prompt, max_length=40, num_return_sequences=1)
+                output = generator(
+    user_prompt,
+    max_length=80,             # Increase token length for longer sentences
+    num_return_sequences=1,    # How many outputs you want
+    temperature=0.9,           # Adds randomness for creativity (higher = more random)
+    top_k=50,                  # Limits sampling to top 50 tokens
+    top_p=0.95,                # Nucleus sampling for diversity
+    do_sample=True             # Enables sampling for variation
+)
+
             st.success(f"Generated Fake News: {output[0]['generated_text']}")
         else:
             st.error("Please enter a topic.")
